@@ -6,7 +6,7 @@
 * @name Youtube Bridge
 * @description Returns the newest videos by username or playlist
 * @use1(u="username")
-* @use1(p="playlist id")
+* @use2(p="playlist id")
 */
 class YoutubeBridge extends BridgeAbstract{
     
