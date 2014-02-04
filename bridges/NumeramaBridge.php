@@ -8,10 +8,6 @@
 */
 class NumeramaBridge extends BridgeAbstract{
 
-
-
-
-
     public function collectData(array $param){
 
     function NumeramaStripCDATA($string) {
@@ -20,9 +16,9 @@ class NumeramaBridge extends BridgeAbstract{
     	return $string;
     }
     function NumeramaExtractContent($url) {
-	$url = str_replace('/magazine/', '/magazine/copier/', $url);
 	$html2 = file_get_html($url);
-	$text = $html2->find('div#numnews', 0)->innertext;
+	$text = $html2->find('h2.intro', 0)->innertext;
+	$text = $text.$html2->find('div.content', 0)->innertext;
 	return $text;
     }
         $html = file_get_html('http://www.numerama.com/rss/news.rss') or $this->returnError('Could not request Numerama.', 404);
