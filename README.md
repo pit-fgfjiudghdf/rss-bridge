@@ -12,11 +12,8 @@ Supported sites/pages
  * `Identi.ca` : Identica user timeline (Should be compatible with other Pump.io instances).
  * `YouTube` : YouTube user channel feed.
  * `Cryptome` : Returns the most recent documents from Cryptome.org.
- * `Futurasciences` : Returns the most recent articles from futura-sciences.com.
- * `GuruMed`: Returns the most recent articles for gurumed.org
  * `DansTonChat`: Most recent quotes from danstonchat.com
  * `DuckDuckGo`: Most recent results from DuckDuckGo.com
- * `FSBridge`: Most recent article (full text) from futura-sciences.com
  * `GuruMed`: Most recent entries (full text) from gurumed.org
  * `Instagram`: Most recent photos from an instagram.com user.
  * `OpenClassrooms`: Lastest tutorials from fr.openclassrooms.com.
@@ -25,6 +22,7 @@ Supported sites/pages
  * `WikipediaENLatest`: highlighted articles from Wikipedia in English.
  * `WikipediaFRLatest`: highlighted articles from Wikipedia in French.
  * `WikipediaEOLatest`: highlighted articles from Wikipedia in Esperanto.
+ * `Bandcamp` : Returns last release from bandcamp for a tag
 
 
 Output format
@@ -52,7 +50,7 @@ Requirements
 
  * php 5.3
  * [PHP Simple HTML DOM Parser](http://simplehtmldom.sourceforge.net). (Put `simple_html_dom.php` in `vendor/simplehtmldom/`).
- * Ssl lib activated in PHP config
+ * TLS lib activated in PHP config for some bridges.
 
  
 Author
@@ -68,6 +66,7 @@ Patch/contributors :
  * [Astalaseven](https://github.com/Astalaseven)
  * [qwertygc](https://github.com/qwertygc)
  * [Djuuu](https://github.com/Djuuu)
+ * [Anadrark](https://github.com/Anadrark])
 
 Licence
 ===
